@@ -4,6 +4,10 @@ const audioElement = document.getElementById("audio");
 //* Disable/Enable the button
 function toggleButton() {
   button.disabled = !button.disabled;
+
+  button.disabled
+    ? (button.innerText = "Listen up 🔊")
+    : (button.innerText = "Tell me a joke");
 }
 //* Passing Jokes to VoiceRSS API
 function tellMe(joke) {
